@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.title {
+    font-size: 36px;
+    margin: 30px auto;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+.text {
+    font-size: 15px;
+}
