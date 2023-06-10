@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+     viewBox="0 0 800 800">
+    <g stroke-width="15" stroke="#77A7FF" fill="none" stroke-linecap="round" stroke-linejoin="round"
+       stroke-dasharray="26.5 0" transform="rotate(224, 400, 400)">
+        <path d="M195.5 204.27915573120117Q443.5 124.27915573120117 400 408.7791557312012Q382.5 585.2791557312012 604.5 613.2791557312012 "
+              marker-end="url(#SvgjsMarker2464)"></path>
+    </g>
+    <defs>
+        <marker
+                markerWidth="13"
+                markerHeight="13"
+                refX="6.5"
+                refY="6.5"
+                viewBox="0 0 13 13"
+                orient="auto"
+                id="SvgjsMarker2464">
+            <polyline points="0,6.5 6.5,3.25 0,0" fill="none" stroke-width="2.1666666666666665" stroke="#77a7ff"
+                      stroke-linecap="round" transform="matrix(1,0,0,1,2.1666666666666665,3.25)"
+                      stroke-linejoin="round"></polyline>
+        </marker>
+    </defs>
+</svg>

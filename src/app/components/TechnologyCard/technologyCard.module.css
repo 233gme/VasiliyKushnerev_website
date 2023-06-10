@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 250px;
+}
+
+.count {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: -.5px;
+}
+
+.text::first-letter {
+    text-transform: capitalize;
+}

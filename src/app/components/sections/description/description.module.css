@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    padding: 0 20px 30px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--secondary);
+    letter-spacing: 1.23px;
+}
+
+.nlp_desc {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.nlp_desc figure {
+    display: flex;
+    justify-content: center;
+}
+
+.nlp_desc article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.nlp_desc article h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nlp_desc article h5 {
+    font-size: 30px;
+}
+
+.nlp_desc article p {
+    font-size: 16px;
+}
+
+.nlp_desc_title {
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.nlp_desc_title::before {
+    content: url("../../../../../public/icons/dot.svg");
+    margin-right: 8px;
+}

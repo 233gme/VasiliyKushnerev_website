@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.title {
+    padding: 0 20px 30px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--secondary);
+    letter-spacing: 1.23px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+.primary {
+    padding: 20px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    color: white;
+}
+
+.secondary {
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: var(--red);
+    border: none;
+    border-radius: 30px;
+    width: max-content;
+    color: white;
+    font-size: 16px;
+    transition: all linear 0.3s;
+}
+
+.secondary:hover {
+    box-shadow: var(--secondary-red) 0 2px 10px !important
+}

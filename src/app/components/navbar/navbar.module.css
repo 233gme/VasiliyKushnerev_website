@@ -1,0 +1,39 @@
+.container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    /*background-image: linear-gradient(to right, var(--blue), var(--grey));*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100% 6px;*/
+    /*background-position: left bottom 5px;*/
+}
+
+.link {
+    transition: all linear 0.3s;
+}
+
+.link:hover {
+    color: var(--secondary);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logout {
+    padding: 5px;
+    border: none;
+    background-color: #53c28b;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
