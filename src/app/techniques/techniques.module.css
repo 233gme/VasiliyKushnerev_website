@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    padding: 0 20px 40px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary);
+    letter-spacing: 1.23px;
+    display: block;
+    text-align: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.desc > p {
+    text-align: justify;
+    color: var(--over);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.items {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.item1, .item2 {
+    border: 4px solid var(--over);
+    color: var(--over);
+    border-radius: var(--r-section);
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    background-size: cover !important;
+    background-position: 50% 50%;
+    transition: all linear 0.2s;
+}
+
+.item1:nth-child(1) {
+    background-image: url("../../../public/techniques/Tehnika-NLP-kollaps-yakorej.webp");
+}
+
+.item1:nth-child(2) {
+    background-image: url("../../../public/techniques/Tekhnika-NLP-Yakorenie.webp");
+}
+
+.item1:nth-child(3) {
+    background-image: url("../../../public/techniques/Tekhnika-NLP-osvobozhdenie-ot-sozavisimosti.webp");
+}
+
+.item2:nth-child(1) {
+    background-image: url("../../../public/techniques/Tehnika-NLP-reimprinting.webp");
+}
+
+.item2:nth-child(2) {
+    background-image: url("../../../public/techniques/Tehnika-NLP-trehpozicionnoe-opisanie.webp");
+}
+
+.item2:nth-child(3) {
+    background-image: url("../../../public/techniques/Tehnika-NLP-lyubov-k-sebe.webp");
+}
+
+.item_title {
+    font-size: 28px;
+    font-weight: 600;
+    transition: color linear 0.2s;
+}
+
+.item1:hover, .item2:hover {
+    border-color: var(--primary);
+    box-shadow: rgba(38, 78, 118, 0.1) 0 4px 25px !important;
+    cursor: pointer;
+}
+
+.item1:hover, .item2:hover .item_title {
+    color: var(--primary);
+}

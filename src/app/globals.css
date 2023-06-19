@@ -1,15 +1,6 @@
 :root {
-    --primary: #0F2137;
     --secondary: #2374E1;
-    --blue: #77A7FF;
-    --white: #FFFFFF;
-    --yellow: #FBAE3C;
-    --red: #FF0066;
-    --secondary-red: #ff4496;
-    --over: #343D48;
     --grey: #F6F8FB;
-
-    --border: rgba(38, 78, 118, 0.1);
 
     --r-body: 10px;
     --r-section: 5px;
@@ -25,10 +16,6 @@ html,
 body {
     max-width: 100vw;
     overflow-x: hidden;
-    color: var(--primary);
-
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 253, 1) 37%, rgba(248, 250, 253, 1) 100%);
 }
 
 a {
@@ -41,13 +28,37 @@ a {
 }
 
 .light {
-    background-color: white;
-    color: #111;
+    --primary: #0F2137;
+    --white: #FFFFFF;
+    --blue: #77A7FF;
+    --over: #343D48;
+    --red: #FF0066;
+    --secondary-red: #ff4496;
+    --yellow: #FBAE3C;
+
+    --border: rgba(38, 78, 118, 0.1);
+
+    color: var(--primary);
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 253, 1) 37%, rgba(248, 250, 253, 1) 100%);
 }
 
 .dark {
-    background-color: #111;
-    color: #bbb;
+    --primary: #DCDDD8;
+    --white: #354B5E;
+    --blue: #425e91;
+    --over: #96C0CE;
+    --red: #C25B56;
+    --secondary-red: #D74B4B;
+    --yellow: #d0a727;
+
+    --border: #525564;
+
+    color: var(--primary);
+
+    background: rgb(15, 33, 55);
+    background: linear-gradient(180deg, rgba(15, 33, 55, 1) 0%, rgba(52, 61, 72, 1) 100%);
 }
 
 .container {

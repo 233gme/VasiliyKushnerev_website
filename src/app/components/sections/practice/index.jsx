@@ -12,7 +12,13 @@ const Practice = () => {
         {
           cards.map(({ title, text, img, alt }) => {
             return (
-              <PracticeCard key={title} img={img} alt={alt} title={title} text={text}/>
+              <PracticeCard
+                key={title}
+                img={img}
+                alt={alt}
+                title={title}
+                text={text}
+              />
             );
           })
         }

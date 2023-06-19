@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    padding: 0 20px 40px;
+    font-size: 36px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary);
+    letter-spacing: 1.23px;
+    display: block;
+    text-align: center;
+}
