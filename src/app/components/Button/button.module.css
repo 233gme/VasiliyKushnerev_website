@@ -1,11 +1,13 @@
 .primary {
-    padding: 20px;
+    padding: 15px 25px;
     cursor: pointer;
     background-color: var(--secondary);
     border: none;
     border-radius: 5px;
     width: max-content;
     color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
     transition: all linear 0.3s;
 }
 

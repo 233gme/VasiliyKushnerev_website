@@ -51,7 +51,7 @@
 }
 
 .nlp_desc > figure {
-    animation: move 3s infinite ease alternate;
+    /*animation: move 3s infinite ease alternate;*/
 }
 
 .nlp_desc_title {

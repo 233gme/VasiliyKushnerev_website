@@ -13,6 +13,10 @@
 
 .link {
     transition: all linear 0.3s;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 1.2;
 }
 
 .link:hover {
@@ -26,10 +30,15 @@
 }
 
 .logout {
-    padding: 5px;
+    padding: 5px 15px;
     border: none;
-    background-color: #53c28b;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--white);
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: var(--r-section);
+    transition: background-color linear 0.3s;
+}
+
+.logout:hover {
+    background-color: var(--blue);
 }

@@ -26,16 +26,16 @@ const About = () => {
     <div className={styles.container}>
       <div
         onClick={handleClose}
-        className={showBlock ? styles.full : styles.doNotShow}
+        className={showBlock ? styles.full : styles.do_not_show}
       >
         {
           image ? <Image src={image} alt="diploma" fill/> : null
         }
       </div>
       <span className={styles.container_subtitle}>Обо мне</span>
-      <h3 className={styles.container_title}>Давайте знакомится!</h3>
-      <article className={styles.about_container}>
-        <div className={styles.img_container}>
+      <h1 className={styles.container_title}>Давайте знакомится!</h1>
+      <section className={styles.about_container}>
+        <aside className={styles.img_container}>
           <Image
             src={aboutImg}
             alt="VasiliyKushnerev"
@@ -45,24 +45,24 @@ const About = () => {
             Дипломы и сертификаты
           </div>
           <div className={styles.diplomas}>
-            <div onClick={handleOpen(first)}>
+            <figure onClick={handleOpen(first)}>
               <Image src={first} alt={'diploma'} width={70} height={50}/>
-            </div>
-            <div onClick={handleOpen(second)}>
+            </figure>
+            <figure onClick={handleOpen(second)}>
               <Image src={second} alt={'diploma'} width={70} height={50}/>
-            </div>
-            <div onClick={handleOpen(third)}>
+            </figure>
+            <figure onClick={handleOpen(third)}>
               <Image src={third} alt={'diploma'} width={70} height={50}/>
-            </div>
-            <div onClick={handleOpen(fourth)}>
+            </figure>
+            <figure onClick={handleOpen(fourth)}>
               <Image src={fourth} alt={'diploma'} width={70} height={50}/>
-            </div>
+            </figure>
           </div>
-        </div>
+        </aside>
 
-        <div className={styles.text_container}>
-          <div className={styles.item}>
-            <h1 className={styles.text_title}>Кто я?</h1>
+        <section className={styles.text_container}>
+          <article className={styles.item}>
+            <h2 className={styles.text_title}>Кто я?</h2>
             <p className={styles.desc}>
               Добрый день, дорогие друзья!
               Спасибо, что заглянули на личный сайт, и я надеюсь,
@@ -79,9 +79,9 @@ const About = () => {
               когда я начал обучение в программе подготовки
               гештальт-терапевтов МГИ
             </p>
-          </div>
-          <div className={styles.item}>
-            <h1 className={styles.text_title}>Чем я занимаюсь?</h1>
+          </article>
+          <article className={styles.item}>
+            <h3 className={styles.text_title}>Чем я занимаюсь?</h3>
             <p className={styles.desc}>
               В настоящее время веду терапевтические группы, Бизнес-тренинги,
               тренинги НЛП и личностного роста, провожу психологические очные
@@ -91,10 +91,10 @@ const About = () => {
               В работе с клиентами использую глубокую научную основу,
               сочетающую простой прагматичный, индивидуальный подход.
             </p>
-          </div>
-          <div className={styles.item}>
-            <h1 className={styles.text_title}>Немного об официальном
-              образовании.</h1>
+          </article>
+          <article className={styles.item}>
+            <h3 className={styles.text_title}>Немного об официальном
+              образовании.</h3>
             <p className={styles.desc}>
               БГПУ им. М. Танка 2006 — 2011 Специальность
               «Психология семейных отношений. Семейный психолог»
@@ -113,9 +113,9 @@ const About = () => {
               (International Coach and Trainer Association, ICTA)
               Бизнес-тренер, 2014 г.
             </p>
-          </div>
-        </div>
-      </article>
+          </article>
+        </section>
+      </section>
     </div>
   );
 };

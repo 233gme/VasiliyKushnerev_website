@@ -1,10 +1,10 @@
 import styles from './form.module.css';
 import Link from 'next/link';
 
-const Form = () => {
+const Form = ({ handelSubmit, title = 'Записаться' }) => {
   return (
     <form
-      // onSubmit={handelSubmit}
+      onSubmit={handelSubmit}
       className={styles.form}
     >
       <input
@@ -20,7 +20,7 @@ const Form = () => {
         className={styles.input}
       />
       <button className={styles.button}>
-        Записаться
+        {title}
       </button>
       <span className={styles.privacy}>
         Нажимая на кнопку, вы соглашаетесь с политикой
