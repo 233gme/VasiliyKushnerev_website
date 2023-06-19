@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 60px;
 }
 
 .title {
@@ -70,4 +69,37 @@
 
 .how_it_works_text {
     flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(38, 78, 118, 0.1);
+    border-radius: var(--r-body);
+    background-color: var(--white);
+    transition: all linear 0.3s;
+}
+
+.how_it_works_text:hover {
+    box-shadow: rgba(38, 78, 118, 0.1) 0 4px 25px !important;
+}
+
+.how_it_works_text_header > p {
+    text-align: center;
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tel_block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tel {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
 }

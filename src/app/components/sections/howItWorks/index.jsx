@@ -1,4 +1,5 @@
 import styles from './howItWorks.module.css';
+import Form from '@/app/components/Form';
 
 const HowItWorks = () => {
   return (
@@ -14,11 +15,19 @@ const HowItWorks = () => {
           <p>Постановка личных целей и достижение результатов</p>
         </div>
         <div className={styles.how_it_works_text}>
-          На самом деле, НЛП методы очень просты, и освоить их может каждый!
-          А результаты — просто потрясающие!
-          Нужен РЕЗУЛЬТАТ?
-          Попробуй личную бесплатную онлайн консультацию!
-          Запись по телефону или телеграмму:
+          <div className={styles.how_it_works_text_header}>
+            <p>На самом деле, НЛП методы очень просты,<br/>
+              и освоить их может каждый!</p>
+            <p>А результаты — просто потрясающие!</p>
+          </div>
+          <p>Нужен РЕЗУЛЬТАТ?</p>
+          <p>Попробуй личную бесплатную онлайн консультацию!</p>
+          <p>Запись по телефону или телеграмму:</p>
+          <div className={styles.tel_block}>
+            <span className={styles.tel}>+7(929) 694-90-11</span>
+            <span className={styles.tel}>@VasiliyKushnerev</span>
+          </div>
+          <Form/>
         </div>
       </div>
     </section>

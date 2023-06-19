@@ -9,6 +9,8 @@
     --over: #343D48;
     --grey: #F6F8FB;
 
+    --border: rgba(38, 78, 118, 0.1);
+
     --r-body: 10px;
     --r-section: 5px;
 }

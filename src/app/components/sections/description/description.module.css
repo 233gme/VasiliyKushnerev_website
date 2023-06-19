@@ -50,6 +50,10 @@
     font-size: 16px;
 }
 
+.nlp_desc > figure {
+    animation: move 3s infinite ease alternate;
+}
+
 .nlp_desc_title {
     font-weight: 500;
     margin-left: 20px;
@@ -58,4 +62,13 @@
 .nlp_desc_title::before {
     content: url("../../../../../public/icons/dot.svg");
     margin-right: 8px;
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(10px);
+    }
 }

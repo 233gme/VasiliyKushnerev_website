@@ -1,10 +1,10 @@
 import styles from './banner.module.css';
-import Link from 'next/link';
 import Image from 'next/image';
 import VasiliyKushnerev
   from 'public/images/Konsultaciya-chastnogo-onlajn-psihologa.webp';
 import { statsData } from '@/app/components/lib/const/stats.data';
 import StatsCard from '@/app/components/StatsCard';
+import Form from '@/app/components/Form';
 
 const Banner = () => {
   return (
@@ -21,34 +21,8 @@ const Banner = () => {
           <p className={styles.desc}>
             Попробуй Бесплатную Личную Консультацию (30мин)!
           </p>
-          <form
-            // onSubmit={handelSubmit}
-            className={styles.form}
-          >
-            <input
-              type="text"
-              placeholder="Ваше имя:"
-              required
-              className={styles.input}
-            />
-            <input
-              type="text"
-              placeholder="Ваш e-mail:"
-              required
-              className={styles.input}
-            />
-            <button className={styles.button}>
-              Записаться
-            </button>
-            <span className={styles.privacy}>
-              Нажимая на кнопку, вы соглашаетесь с политикой
-              <Link href={'/privacy_policy'} className={styles.privacy_link}>
-                {` ${'конфиденциальности'}`}
-              </Link>
-            </span>
-          </form>
+          <Form/>
         </div>
-        {/*<Button url="/portfolio" text="See Our Works"/>*/}
       </div>
       <div className={styles.item}>
         <Image
