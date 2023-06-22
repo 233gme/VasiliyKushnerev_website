@@ -18,3 +18,63 @@
     display: block;
     text-align: center;
 }
+
+.text {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.text > p {
+    text-align: justify;
+}
+
+.desc_subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.desc {
+}
+
+.desc_item {
+}
+
+.desc_item > p {
+    margin: 20px 0;
+}
+
+.desc_item > p > span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.desc_item > p > span:first-child {
+    color: var(--secondary);
+}
+
+.desc_item_img {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.footer_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 80px 0;
+}

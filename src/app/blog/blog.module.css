@@ -5,6 +5,14 @@
     margin-bottom: 50px;
 }
 
+.mainContainer {
+
+}
+
+.imageContainer {
+    
+}
+
 .image {
     object-fit: cover;
 }

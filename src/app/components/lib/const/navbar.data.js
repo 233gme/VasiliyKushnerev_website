@@ -22,7 +22,7 @@ export const links = [
   {
     id: 5,
     title: 'Вопрос - Ответ',
-    url: '/question answer',
+    url: '/question_answer',
   },
   {
     id: 6,

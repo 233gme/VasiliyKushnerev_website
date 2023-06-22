@@ -27,7 +27,7 @@
       80,
       2,
       {
-        "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
+        "ignorePattern": "^import .*",
         "ignoreUrls": true,
         "ignoreComments": true
       }

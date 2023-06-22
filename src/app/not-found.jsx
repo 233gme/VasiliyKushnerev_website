@@ -1,13 +1,14 @@
-import Link from 'next/link';
 import styles from './page.module.css';
+import Button from '@/app/components/Button/Button';
 
 const NotFound = () => {
   return (
     <div className={styles.not_found_container}>
-      <h1> 😵‍💫 Ой! Такого нет, но скоро исправим!</h1>
-      <div>
-        <Link href="/">👉 нажмите суда чтобы вернуться 👈</Link>
-      </div>
+      <h2> 😵‍💫 Ой! Ошибка!</h2>
+      <Button
+        url={'/'}
+        text={'ВЕРНУТЬСЯ НА ГЛАВНУЮ'}
+        type={'secondary'}/>
     </div>
   );
 };

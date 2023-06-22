@@ -4,6 +4,14 @@ import contact from 'public/images/contact.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Контакты - Официальный сайт Василия Кушнерева',
+  description: 'Личный сайт Василия Кушнерева. ' +
+    'Провожу онлайн консультации дистанционно и в городе Москва. ' +
+    'Если нужен частный, профессиональный, взрослый НЛП психолог, ' +
+    'первая консультация бесплатно'
+};
+
 const Contacts = () => {
   return (
     <div className={styles.container}>

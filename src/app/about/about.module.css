@@ -34,7 +34,8 @@
     position: relative;
 }
 
-.diplomas > div {
+.diplomas > figure {
+    cursor: pointer;
 }
 
 .diplomas > img {

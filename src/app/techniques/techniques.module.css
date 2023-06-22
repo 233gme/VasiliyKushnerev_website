@@ -57,7 +57,7 @@
     padding: 20px;
     background-size: cover !important;
     background-position: 50% 50%;
-    transition: all linear 0.2s;
+    transition: all linear 0.3s;
 }
 
 .item1:nth-child(1) {
@@ -87,12 +87,12 @@
 .item_title {
     font-size: 28px;
     font-weight: 600;
-    transition: color linear 0.2s;
+    transition: color linear 0.3s;
 }
 
 .item1:hover, .item2:hover {
     border-color: var(--primary);
-    box-shadow: rgba(38, 78, 118, 0.1) 0 4px 25px !important;
+    box-shadow: var(--primary) 0 4px 20px !important;
     cursor: pointer;
 }
 

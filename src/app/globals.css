@@ -1,5 +1,4 @@
 :root {
-    --secondary: #2374E1;
     --grey: #F6F8FB;
 
     --r-body: 10px;
@@ -29,6 +28,7 @@ a {
 
 .light {
     --primary: #0F2137;
+    --secondary: #2374E1;
     --white: #FFFFFF;
     --blue: #77A7FF;
     --over: #343D48;
@@ -46,6 +46,7 @@ a {
 
 .dark {
     --primary: #DCDDD8;
+    --secondary: #7f9ba6;
     --white: #354B5E;
     --blue: #425e91;
     --over: #96C0CE;
@@ -58,7 +59,7 @@ a {
     color: var(--primary);
 
     background: rgb(15, 33, 55);
-    background: linear-gradient(180deg, rgba(15, 33, 55, 1) 0%, rgba(52, 61, 72, 1) 100%);
+    background: linear-gradient(180deg, rgba(15, 33, 55, 1) 0%, rgb(28, 44, 63) 100%);
 }
 
 .container {
