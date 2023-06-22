@@ -3,11 +3,11 @@
     cursor: pointer;
     background-color: var(--secondary);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--r-section);
     width: max-content;
     color: var(--white);
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: bold;
     transition: all linear 0.3s;
 }
 

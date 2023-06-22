@@ -6,11 +6,19 @@
 }
 
 .mainContainer {
+    height: calc(100vh - 130px);
+}
 
+.title {
+    padding: 0 30px 40px;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    font-weight: 700;
 }
 
 .imageContainer {
-    
+
 }
 
 .image {
@@ -20,11 +28,11 @@
 .content {
 }
 
-.title {
+.post_title {
     margin-bottom: 10px;
 }
 
-.desc {
+.post_desc {
     font-size: 18px;
     color: var(--over);
 }

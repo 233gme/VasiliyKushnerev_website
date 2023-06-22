@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    color: var(--primary);
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.or {
+    color: var(--over);
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--over);
+    transition: color linear 0.3s;
+}
+
+.link:hover {
+    color: var(--secondary);
+}
+
+.google {
+    width: 300px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-weight: bold;
+    transition: all linear 0.3s;
+    background-color: rgba(228, 97, 50, 0.72);
+}
+
+.google:hover {
+    box-shadow: rgba(228, 97, 50, 0.803) 0 2px 10px !important;
+    background-color: rgba(228, 97, 50, 0.803);
+}
