@@ -1,5 +1,5 @@
 import styles from './page.module.css';
-import Button from '@/app/components/Button/Button';
+import Button from 'src/app/components/shared/ui/LinkButton';
 
 const NotFound = () => {
   return (

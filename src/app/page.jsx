@@ -1,6 +1,6 @@
 import styles from './page.module.css';
 import { Suspense } from 'react';
-import Loader from '@/app/components/Loader';
+import Loader from 'src/app/components/shared/ui/Loader';
 import {
   Banner,
   Description,
@@ -9,7 +9,7 @@ import {
   Price,
   Questions,
   Steps
-} from '@/app/components/sections';
+} from 'src/app/components/widgets/sections';
 
 
 export default function Home() {

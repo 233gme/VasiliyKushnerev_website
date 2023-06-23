@@ -1,0 +1,25 @@
+.title {
+    padding: 0 20px 30px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.container {
+    color: var(--white);
+    border-radius: var(--r-body);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px 50px;
+    background: url("../../../../../../public/images/blob.svg") var(--blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.technology_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}

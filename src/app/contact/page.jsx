@@ -1,8 +1,8 @@
 import styles from './contacts.module.css';
-import Button from '@/app/components/Button/Button';
 import contact from 'public/images/contact.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import Form from 'src/app/components/shared/ui/Form';
 
 export const metadata = {
   title: 'Контакты - Официальный сайт Василия Кушнерева',
@@ -30,18 +30,10 @@ const Contacts = () => {
             className={styles.image}
           />
         </div>
-        <form className={styles.form}>
-          <input type="text" placeholder="Ваше имя" className={styles.input}/>
-          <input type="text" placeholder="Ваш email" className={styles.input}/>
-          <textarea
-            className={styles.text_area}
-            placeholder="Сообщение"
-            cols="30"
-            rows="10"
-          >
-          </textarea>
-          <Button url="#" text="Отправить"/>
-        </form>
+        <Form
+          text={true}
+          title={'Отправить'}
+        />
       </div>
       <div className={styles.contacts}>
         <div>

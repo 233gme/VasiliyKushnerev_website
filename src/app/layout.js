@@ -1,9 +1,9 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
-import Navbar from '@/app/components/navbar/Navbar';
-import Footer from '@/app/components/footer/Footer';
+import Navbar from '@/app/components/widgets/navbar/Navbar';
+import Footer from '@/app/components/widgets/footer/Footer';
 import { ThemeProvider } from '@/context/ThemeContext';
-import AuthProvider from '@/app/components/AuthProvider';
+import AuthProvider from 'src/app/components/shared/lib/AuthProvider';
 
 const inter = Inter({
   weight: ['100', '200', '300', '400', '500', '600', '700'],

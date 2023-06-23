@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    padding: 0 20px 30px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: var(--secondary);
+    letter-spacing: 1.23px;
+}
+
+.block {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.how_it_works_deck {
+    flex: 0 0 60%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url("../../../../../../public/images/how_it_works.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.how_it_works_deck > p {
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 350px;
+}
+
+.how_it_works_deck > p:nth-child(odd) {
+    padding-left: 20px;
+    padding-right: 70px;
+    text-align: right;
+    width: 50%;
+    min-height: 115px;
+    float: left;
+    clear: both;
+    background: linear-gradient(to right, var(--primary), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how_it_works_deck > p:nth-child(even) {
+    padding-right: 20px;
+    padding-left: 70px;
+    text-align: left;
+    width: 50%;
+    min-height: 115px;
+    float: right;
+    clear: both;
+    background: linear-gradient(to left, var(--primary), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.how_it_works_text {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid rgba(38, 78, 118, 0.1);
+    border-radius: var(--r-body);
+    background-color: var(--white);
+    transition: all linear 0.3s;
+}
+
+.how_it_works_text:hover {
+    box-shadow: rgba(38, 78, 118, 0.1) 0 4px 25px !important;
+}
+
+.how_it_works_text_header > p {
+    text-align: center;
+    color: var(--red);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tel_block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tel {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}

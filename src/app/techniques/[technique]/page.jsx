@@ -2,7 +2,7 @@ import styles from './technique.module.css';
 import { techniquesItem } from './data.js';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import Button from '@/app/components/Button/Button';
+import Button from 'src/app/components/shared/ui/LinkButton';
 
 const getData = (tec) => {
   const data = techniquesItem[tec];
@@ -44,7 +44,6 @@ const Technique = ({ params }) => {
                           alt={item.title}
                           width={358}
                           height={403}
-                          placeholder="blur"
                         />
                       </div>
                     ) : null
