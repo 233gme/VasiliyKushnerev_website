@@ -21,17 +21,12 @@ export const links = [
   },
   {
     id: 5,
-    title: 'Вопрос - Ответ',
-    url: '/question_answer',
-  },
-  {
-    id: 6,
     title: 'Контакты',
     url: '/contact',
   },
   {
-    id: 7,
-    title: 'Dashboard',
+    id: 6,
+    title: 'Вопрос-Ответ',
     url: '/dashboard',
   },
 ];

@@ -25,30 +25,33 @@ const Blog = async () => {
   const data = await getData();
 
   return (
-    <section className={styles.mainContainer}>
-      {data.map(({ title, desc, img, _id }) => (
-        <Link
-          href={`/blog/${_id}`}
-          className={styles.container}
-          key={_id}
-        >
-          <div className={styles.imageContainer}>
-            <Image
-              src={img}
-              alt=""
-              width={400}
-              height={250}
-              className={styles.image}
-              loading="lazy"
-            />
-          </div>
-          <div className={styles.content}>
-            <h1 className={styles.title}>{title}</h1>
-            <p className={styles.desc}>{desc}</p>
-          </div>
-        </Link>
-      ))}
-    </section>
+    <div className={styles.mainContainer}>
+      <h1 className={styles.title}>Блог</h1>
+      <section>
+        {data.map(({ title, desc, img, _id }) => (
+          <Link
+            href={`/blog/${_id}`}
+            className={styles.container}
+            key={_id}
+          >
+            <div className={styles.imageContainer}>
+              <Image
+                src={img}
+                alt={title}
+                width={400}
+                height={250}
+                className={styles.image}
+                loading="lazy"
+              />
+            </div>
+            <div className={styles.content}>
+              <h1 className={styles.post_title}>{title}</h1>
+              <p className={styles.post_desc}>{desc}</p>
+            </div>
+          </Link>
+        ))}
+      </section>
+    </div>
   );
 };
 

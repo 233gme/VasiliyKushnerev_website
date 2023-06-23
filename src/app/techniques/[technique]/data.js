@@ -1,19 +1,3 @@
-import collapse_of_anchors_1
-  from '../../../../public/techniques/collapse_of_anchors/1.jpeg';
-import collapse_of_anchors_2
-  from '../../../../public/techniques/collapse_of_anchors/2.jpeg';
-import collapse_of_anchors_3
-  from '../../../../public/techniques/collapse_of_anchors/3.jpeg';
-import collapse_of_anchors_4
-  from '../../../../public/techniques/collapse_of_anchors/4.jpeg';
-import collapse_of_anchors_5
-  from '../../../../public/techniques/collapse_of_anchors/5.jpeg';
-import anchoring_1 from '../../../../public/techniques/anchoring/1.jpeg';
-import anchoring_2 from '../../../../public/techniques/anchoring/2.jpeg';
-import anchoring_3 from '../../../../public/techniques/anchoring/3.jpeg';
-import anchoring_4 from '../../../../public/techniques/anchoring/4.jpeg';
-import anchoring_5 from '../../../../public/techniques/anchoring/5.jpeg';
-
 export const techniquesItem = {
   collapse_of_anchors: {
     title: 'Коллапс якорей',
@@ -45,7 +29,7 @@ export const techniquesItem = {
         text: 'Определите нежелательные для вас эмоции в определенном ' +
           'контексте и заякорьте их прикосновение на левой ноге ' +
           '(или иным способом).',
-        img: collapse_of_anchors_1
+        img: '/techniques/collapse_of_anchors/1.jpeg'
       },
       {
         type: 'section',
@@ -53,7 +37,7 @@ export const techniquesItem = {
         text: 'Определите ресурсные эмоции, которые вам помогут справиться с ' +
           'ситуацией и заякорьте их прикосновением на правой ноге ' +
           '2(или иным способом).',
-        img: collapse_of_anchors_2
+        img: '/techniques/collapse_of_anchors/2.jpeg'
       },
       {
         type: 'section',
@@ -62,21 +46,21 @@ export const techniquesItem = {
           'на левой ноге и правой) и наблюдайте за восприятием в течение ' +
           '3-4 минут, затем уберите негативный якорь, и некоторое время (в ' +
           'течение 1 минуты) удерживайте позитивный.',
-        img: collapse_of_anchors_3
+        img: '/techniques/collapse_of_anchors/3.jpeg'
       },
       {
         type: 'section',
         title: 'Экологическая проверка.',
         text: 'Проведите проверку. Как изменилась ситуация? Если, что-то ' +
           'следует добавить, то вернитесь на шаг 2.',
-        img: collapse_of_anchors_4
+        img: '/techniques/collapse_of_anchors/4.jpeg'
       },
       {
         type: 'section',
         title: 'Подстройка под будущее.',
         text: 'Представьте 3-4 ситуации, которые могут случиться с вами ' +
           '5в будущем, испытывая это новое состояние.',
-        img: collapse_of_anchors_5
+        img: '/techniques/collapse_of_anchors/5.jpeg'
       }
     ],
     footer: 'Большими плюсами данной техники НЛП Коллапс Якорей, являются ' +
@@ -120,14 +104,14 @@ export const techniquesItem = {
         title: 'Определите состояние.',
         text: 'Определите, состояние, чувство или эмоцию, какое ' +
           'вы хотели бы заякорить.',
-        img: anchoring_1
+        img: '/techniques/anchoring/1.jpeg'
       },
       {
         type: 'section',
         title: 'Вызовите состояние.',
         text: 'Вызовите данное состояние посредством ' +
           'воспоминания или воображения.',
-        img: anchoring_2
+        img: '/techniques/anchoring/2.jpeg'
       },
       {
         type: 'section',
@@ -136,20 +120,20 @@ export const techniquesItem = {
           'определенному участку тела (кинестетический якорь), представьте ' +
           'картинку (визуальный якорь), свяжите с каким-либо звуком, ' +
           'мелодией (аудиальный якорь).',
-        img: anchoring_3
+        img: '/techniques/anchoring/3.jpeg'
       },
       {
         type: 'section',
         title: 'Прервите состояние.',
         text: 'Прервите состояние одним отвлекающим вопросом.',
-        img: anchoring_4
+        img: '/techniques/anchoring/4.jpeg'
       },
       {
         type: 'section',
         title: 'Протестируйте якорь.',
         text: 'Протестируйте якорь, воспроизведя его тем способом, ' +
           'которым вы сами себе установили.',
-        img: anchoring_5
+        img: '/techniques/anchoring/5.jpeg'
       },
       {
         type: 'title',

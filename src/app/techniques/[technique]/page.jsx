@@ -39,7 +39,13 @@ const Technique = ({ params }) => {
                   {
                     item?.img ? (
                       <div className={styles.desc_item_img}>
-                        <Image src={item.img} alt={item.title}/>
+                        <Image
+                          src={item.img}
+                          alt={item.title}
+                          width={358}
+                          height={403}
+                          placeholder="blur"
+                        />
                       </div>
                     ) : null
                   }

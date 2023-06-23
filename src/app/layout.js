@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import Navbar from '@/app/components/navbar/Navbar';
 import Footer from '@/app/components/footer/Footer';
 import { ThemeProvider } from '@/context/ThemeContext';
+import AuthProvider from '@/app/components/AuthProvider';
 
 const inter = Inter({
   weight: ['100', '200', '300', '400', '500', '600', '700'],
@@ -20,11 +21,13 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <body className={inter.className}>
         <ThemeProvider>
-          <div className="container">
-            <Navbar/>
-            {children}
-            <Footer/>
-          </div>
+          <AuthProvider>
+            <div className="container">
+              <Navbar/>
+              {children}
+              <Footer/>
+            </div>
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>

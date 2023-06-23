@@ -12,8 +12,7 @@ export const metadata = {
 const Techniques = () => {
   return (
     <div className={styles.container}>
-      <span className={styles.subtitle}>НЛП</span>
-      <h1 className={styles.title}>Основные техники</h1>
+      <h1 className={styles.title}>Техники НЛП</h1>
       <article className={styles.desc}>
         <p>
           Перед вами справочник по основным техникам НЛП, которые помогут

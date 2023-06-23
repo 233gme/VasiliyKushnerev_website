@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title {
+    color: var(--primary);
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--secondary);
+}
+
+.or {
+    color: var(--over);
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--over);
+    transition: color linear 0.3s;
+}
+
+.link:hover {
+    color: var(--secondary);
+}
