@@ -14,9 +14,23 @@ const Form = ({
   custom = null,
   text = false
 }) => {
+
+  const formSubmit = (event) => {
+    event.preventDefault();
+    const formData = {
+      name: event.target.username?.value,
+      email: event.target.email?.value,
+      custom: event.target['custom']?.value,
+      password: event.target.password?.value,
+      text: event.target['text']?.value
+    };
+
+    handelSubmit(formData);
+  };
+
   return (
     <form
-      onSubmit={handelSubmit}
+      onSubmit={formSubmit}
       className={styles.form}
     >
       {
