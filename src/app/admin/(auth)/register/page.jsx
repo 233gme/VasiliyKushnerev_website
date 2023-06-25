@@ -3,18 +3,17 @@ import React, { useState } from 'react';
 import styles from './register.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import Form from 'src/app/components/shared/ui/Form';
+import Form from '@/app/components/shared/ui/Form';
 
 const Register = () => {
   const [error, setError] = useState(null);
 
   const router = useRouter();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const name = e.target[0].value;
-    const email = e.target[1].value;
-    const password = e.target[2].value;
+  const handleSubmit = async (data) => {
+    const name = data.name;
+    const email = data.email;
+    const password = data.password;
 
     try {
       const res = await fetch('/api/auth/register', {
@@ -29,10 +28,10 @@ const Register = () => {
         }),
       });
       res.status === 201
-      && router.push('/question_answer/login?success=Ваша учетная запись создана!');
+      && router.push('/admin/login?success=Ваша учетная запись создана!');
     } catch (err) {
       setError(err);
-      console.log(err);
+      console.log('REGISTER', err);
     }
   };
 
@@ -47,7 +46,7 @@ const Register = () => {
         error={error}
       />
       <span className={styles.or}>- ИЛИ -</span>
-      <Link className={styles.link} href="/dashboard/login">
+      <Link className={styles.link} href="/admin/login">
         Войдите в свой аккаунт
       </Link>
     </div>

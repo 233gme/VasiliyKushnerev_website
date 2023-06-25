@@ -11,7 +11,6 @@ const handler = NextAuth({
       id: 'credentials',
       name: 'Credentials',
       async authorize(credentials) {
-        //Check if the user exists.
         await connectDb();
 
         try {
@@ -30,9 +29,11 @@ const handler = NextAuth({
             } else {
               throw new Error('Проверьте пароль или email!');
             }
+
           } else {
             throw new Error('Проверьте email или пароль!');
           }
+
         } catch (err) {
           throw new Error(err);
         }
@@ -44,7 +45,8 @@ const handler = NextAuth({
     }),
   ],
   pages: {
-    error: '/questions/login',
+    signIn: '/admin/login',
+    error: '/admin/login',
   },
 
 }

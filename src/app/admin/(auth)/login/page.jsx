@@ -4,8 +4,8 @@ import styles from './login.module.css';
 import { signIn, useSession } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import Loader from 'src/app/components/shared/ui/Loader';
-import Form from 'src/app/components/shared/ui/Form';
+import Loader from '@/app/components/shared/ui/Loader';
+import Form from '@/app/components/shared/ui/Form';
 
 const Login = ({ url }) => {
   const session = useSession();
@@ -24,21 +24,20 @@ const Login = ({ url }) => {
   }
 
   if (session.status === 'authenticated') {
-    router?.push('/question_answer');
+    router?.push('/admin');
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const email = e.target[0].value;
-    const password = e.target[1].value;
-
-    signIn('credentials', {
+  const singInGoogle = () => signIn('google');
+  const singInCredentials = (data) => {
+    const email = data.email;
+    const password = data.password;
+    
+    return signIn('credentials', {
       email,
       password,
     });
   };
 
-  const singInGoogle = () => signIn('google');
 
   return (
     <div className={styles.container}>
@@ -55,7 +54,7 @@ const Login = ({ url }) => {
       <h2 className={styles.subtitle}>Пожалуйста, войдите.</h2>
       <Form
         privacy={false}
-        handelSubmit={handleSubmit}
+        handelSubmit={singInCredentials}
         title={'Войти'}
         error={error}
         name={false}
@@ -68,7 +67,7 @@ const Login = ({ url }) => {
         Войти с Google
       </button>
       <span className={styles.or}>- ИЛИ -</span>
-      <Link className={styles.link} href="/dashboard/register">
+      <Link className={styles.link} href="/admin/register">
         Создайте аккаунт
       </Link>
     </div>
