@@ -1,5 +1,5 @@
 'use client';
-import styles from './question_answer.module.css';
+import styles from './questions.module.css';
 import { useSession } from 'next-auth/react';
 import Loader from 'src/app/components/shared/ui/Loader';
 import { useRouter } from 'next/navigation';
@@ -15,11 +15,11 @@ const Dashboard = () => {
   }
 
   const signInHandler = () => {
-    router.push('/question_answer/login');
+    router.push('/questions/login');
   };
 
   // if (session.status === 'unauthenticated') {
-  //   router?.push('/question_answer/login');
+  //   router?.push('/questions/login');
   // }
 
   const handleSubmit = async (e) => {

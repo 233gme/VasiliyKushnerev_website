@@ -3,6 +3,7 @@
 
 .top {
     display: flex;
+    gap: 20px
 }
 
 .info {
@@ -18,18 +19,29 @@
 
 .desc {
     font-size: 18px;
-    font-weight: 300;
+    color: var(--over);
+}
+
+.author_desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: var(--r-body);
+    background-color: var(--white);
 }
 
 .author {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--over);
 }
 
 .avatar {
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .imageContainer {
@@ -48,4 +60,17 @@
     font-weight: 300;
     color: #999;
     text-align: justify;
+}
+
+.text {
+    font-size: 15px;
+    color: var(--primary);
+    line-height: 1.73;
+}
+
+.footer_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 80px 0;
 }

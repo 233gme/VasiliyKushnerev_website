@@ -16,12 +16,12 @@ const Navbar = () => {
   const signOutHandler = () => signOut();
 
   const signInHandler = () => {
-    router.push('/question_answer/login');
+    router.push('/questions/login');
   };
 
   useEffect(() => {
     if (path) {
-      if (path === '/question_answer/login' || path === '/question_answer/register') {
+      if (path === '/questions/login' || path === '/questions/register') {
         setShowLogin(false);
       } else {
         setShowLogin(true);

@@ -78,6 +78,7 @@
     border-radius: var(--r-body);
     background-color: var(--white);
     transition: all linear 0.3s;
+    padding: 20px;
 }
 
 .how_it_works_text:hover {

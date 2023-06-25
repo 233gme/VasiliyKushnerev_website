@@ -3,6 +3,10 @@
     align-items: center;
     gap: 50px;
     margin-bottom: 50px;
+    padding: 15px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-body);
+    background-color: var(--white);
 }
 
 .mainContainer {
@@ -18,7 +22,11 @@
 }
 
 .imageContainer {
-
+    flex: 0 0 400px;
+    border-radius: var(--r-section);
+    overflow: hidden;
+    width: 400px;
+    height: 250px;
 }
 
 .image {
@@ -26,6 +34,9 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .post_title {
@@ -34,5 +45,24 @@
 
 .post_desc {
     font-size: 18px;
+    color: var(--over);
+}
+
+.post_user {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--over);
+}
+
+.post_date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 600;
     color: var(--over);
 }

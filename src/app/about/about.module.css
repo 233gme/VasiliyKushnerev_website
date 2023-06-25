@@ -93,6 +93,8 @@
 .desc {
     font-size: 15px;
     text-align: justify;
+    color: var(--primary);
+    line-height: 1.73;
 }
 
 .full {

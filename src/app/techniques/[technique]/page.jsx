@@ -66,7 +66,7 @@ const Technique = ({ params }) => {
           </div>
         </div>
         <div className={styles.footer_btn}>
-          <Button url={'/techniques/'} text={'👈 вернуться к другим техникам'}/>
+          <Button url={'/techniques/'} text={'👈 Вернуться к другим техникам'}/>
         </div>
       </article>
     </div>
