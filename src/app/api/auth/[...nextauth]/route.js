@@ -44,7 +44,7 @@ const handler = NextAuth({
     }),
   ],
   pages: {
-    error: '/question_answer/login',
+    error: '/questions/login',
   },
 
 }

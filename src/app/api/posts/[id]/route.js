@@ -9,7 +9,11 @@ export const GET = async (req, { params }) => {
   try {
     await connectDb();
 
-    const post = await Post.findById(id);
+    const filter = { _id: id };
+    const update = { $inc: { views: 1 } };
+    const returnAfter = { returnOriginal: false };
+
+    const post = await Post.findOneAndUpdate(filter, update, returnAfter);
 
     return new NextResponse(JSON.stringify(post), { status: 200 });
   } catch (err) {
