@@ -24,6 +24,7 @@ const Form = ({
           <input
             type="text"
             placeholder="Ваше имя:"
+            name={'username'}
             required
             className={styles.input}
           />
@@ -32,8 +33,9 @@ const Form = ({
       {
         email ? (
           <input
-            type="text"
+            type="email"
             placeholder="Ваш e-mail:"
+            name={'email'}
             required
             className={styles.input}
           />
@@ -44,6 +46,7 @@ const Form = ({
           <input
             type="text"
             placeholder={custom}
+            name={'custom'}
             required
             className={styles.input}
           />
@@ -54,6 +57,7 @@ const Form = ({
           <input
             type="password"
             placeholder="Пароль"
+            name={'password'}
             required={password}
             className={styles.input}
           />
@@ -64,6 +68,7 @@ const Form = ({
           <textarea
             className={styles.input}
             placeholder="Сообщение"
+            name={'text'}
             cols="30"
             rows="10"
           >
