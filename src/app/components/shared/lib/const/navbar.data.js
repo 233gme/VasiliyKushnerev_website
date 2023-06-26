@@ -19,11 +19,6 @@ export const links = [
     title: 'Техники НЛП',
     url: '/techniques',
   },
-  // {
-  //   id: 5,
-  //   title: 'Вопрос-Ответ',
-  //   url: '/questions',
-  // },
   {
     id: 6,
     title: 'Контакты',

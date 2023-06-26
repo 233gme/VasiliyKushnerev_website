@@ -13,7 +13,6 @@ const Admin = () => {
 
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
-  // GET FOR CURRENT USER `/api/posts?user=${session?.data?.user.name}`,
   const { data, mutate, error, isLoading } = useSWR(
     '/api/posts',
     fetcher

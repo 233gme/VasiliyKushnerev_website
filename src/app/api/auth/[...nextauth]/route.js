@@ -1,5 +1,4 @@
 import NextAuth from 'next-auth';
-import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import connectDb from '@/utils/db';
 import User from '@/models/User';
@@ -39,13 +38,8 @@ const handler = NextAuth({
         }
       },
     }),
-    GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    }),
   ],
   pages: {
-    signIn: '/admin/login',
     error: '/admin/login',
   },
 

@@ -3,9 +3,6 @@ import connectDb from '@/utils/db';
 import Post from '@/models/Post';
 
 export const GET = async (request) => {
-  // const url = new URL(request.url);
-  // const user = url.searchParams.get('name');
-
   try {
     await connectDb();
 

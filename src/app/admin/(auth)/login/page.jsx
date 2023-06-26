@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './login.module.css';
 import { signIn, useSession } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import Link from 'next/link';
 import Loader from '@/app/components/shared/ui/Loader';
 import Form from '@/app/components/shared/ui/Form';
 
@@ -31,7 +30,7 @@ const Login = ({ url }) => {
   const singInCredentials = (data) => {
     const email = data.email;
     const password = data.password;
-    
+
     return signIn('credentials', {
       email,
       password,
@@ -60,16 +59,6 @@ const Login = ({ url }) => {
         name={false}
         password={true}
       />
-      <button
-        onClick={singInGoogle}
-        className={styles.google}
-      >
-        Войти с Google
-      </button>
-      <span className={styles.or}>- ИЛИ -</span>
-      <Link className={styles.link} href="/admin/register">
-        Создайте аккаунт
-      </Link>
     </div>
   );
 };
