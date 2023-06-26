@@ -8,41 +8,14 @@ import Image from 'next/image';
 import Loader from '@/app/components/shared/ui/Loader';
 
 const Admin = () => {
-
-  //OLD WAY TO FETCH DATA
-
-  // const [data, setData] = useState([]);
-  // const [err, setErr] = useState(false);
-  // const [isLoading, setIsLoading] = useState(false);
-
-  // useEffect(() => {
-  //   const getData = async () => {
-  //     setIsLoading(true);
-  //     const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-  //       cache: "no-store",
-  //     });
-
-  //     if (!res.ok) {
-  //       setErr(true);
-  //     }
-
-  //     const data = await res.json()
-
-  //     setData(data);
-  //     setIsLoading(false);
-  //   };
-  //   getData()
-  // }, []);
-
   const session = useSession();
-
   const router = useRouter();
 
-  //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
+  // GET FOR CURRENT USER `/api/posts?user=${session?.data?.user.name}`,
   const { data, mutate, error, isLoading } = useSWR(
-    `/api/posts?username=${session?.data?.user.name}`,
+    '/api/posts',
     fetcher
   );
 
@@ -54,12 +27,13 @@ const Admin = () => {
     router?.push('/admin/login');
   }
 
-  const handleSubmit = async (e) => {
+  const handleCreate = async (e) => {
     e.preventDefault();
     const title = e.target[0].value;
     const desc = e.target[1].value;
     const img = e.target[2].value;
-    const content = e.target[3].value;
+    const tags = e.target[3].value.split(',');
+    const text = e.target[4].value;
 
     try {
       await fetch('/api/posts', {
@@ -67,15 +41,17 @@ const Admin = () => {
         body: JSON.stringify({
           title,
           desc,
+          text,
+          tags,
+          views: 0,
+          user: session.data.user.name,
           img,
-          content,
-          username: session.data.user.name,
         }),
       });
       mutate();
       e.target.reset();
     } catch (err) {
-      console.log(err);
+      console.log('CREATE', err);
     }
   };
 
@@ -111,11 +87,12 @@ const Admin = () => {
               </div>
             ))}
         </div>
-        <form className={styles.new} onSubmit={handleSubmit}>
+        <form className={styles.new} onSubmit={handleCreate}>
           <h1>Add New Post</h1>
           <input type="text" placeholder="Title" className={styles.input}/>
           <input type="text" placeholder="Desc" className={styles.input}/>
           <input type="text" placeholder="Image" className={styles.input}/>
+          <input type="text" placeholder="Tags" className={styles.input}/>
           <textarea
             placeholder="Content"
             className={styles.textArea}
