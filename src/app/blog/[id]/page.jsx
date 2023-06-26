@@ -6,6 +6,7 @@ import userIcon from '/public/icons/user.svg';
 import dateIcon from '/public/icons/date.svg';
 import eyeIcon from '/public/icons/eye.svg';
 import Button from '@/app/components/shared/ui/LinkButton';
+import { formatDate } from '@/app/components/shared/lib/FormatDate';
 
 async function getData(id) {
   const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
@@ -33,7 +34,7 @@ const Post = async ({ params }) => {
     img,
     text,
     user,
-    date,
+    createdAt,
     views
   } = await getData(params.id);
 
@@ -59,10 +60,10 @@ const Post = async ({ params }) => {
             <div className={styles.author}>
               <Image
                 src={dateIcon}
-                alt={date}
+                alt={createdAt}
                 className={styles.avatar}
               />
-              <span>{date}</span>
+              <span>{formatDate(createdAt)}</span>
             </div>
             <div className={styles.author}>
               <Image

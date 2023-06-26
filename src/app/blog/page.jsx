@@ -5,6 +5,7 @@ import Image from 'next/image';
 import userIcon from '/public/icons/user.svg';
 import dateIcon from '/public/icons/date.svg';
 import eyeIcon from '/public/icons/eye.svg';
+import { formatDate } from '@/app/components/shared/lib/FormatDate';
 
 async function getData() {
   const res = await fetch('http://localhost:3000/api/posts', {
@@ -31,7 +32,7 @@ const Blog = async () => {
     <div className={styles.mainContainer}>
       <h1 className={styles.title}>Блог</h1>
       <section>
-        {data.map(({ title, desc, img, _id, user, date, views }) => (
+        {data.map(({ title, desc, img, _id, user, createdAt, views }) => (
           <Link
             href={`/blog/${_id}`}
             className={styles.container}
@@ -55,8 +56,8 @@ const Blog = async () => {
                 {user}
               </p>
               <p className={styles.post_date}>
-                <Image src={dateIcon} alt={date}/>
-                {date}
+                <Image src={dateIcon} alt={createdAt}/>
+                {formatDate(createdAt)}
               </p>
               <p className={styles.post_date}>
                 <Image src={eyeIcon} alt={views}/>

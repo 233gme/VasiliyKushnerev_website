@@ -1,3 +1,4 @@
+'use client';
 import styles from './form.module.css';
 import Link from 'next/link';
 import React from 'react';
